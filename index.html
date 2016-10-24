@@ -6,6 +6,12 @@
   <meta charset="utf-8">
   <link href="http://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="design/index.css">
+  <style type="text/css">
+    form input, form select{
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
 
 <body>
@@ -22,9 +28,25 @@
 	<main id="content">
 		<section>
 			<article>
-			<!--ToDo Input Fields-->	
-			Input fields belongs here :)
-
+        <form>
+          <label for="lastname">Lastname</label>
+          <input type="text" name="lastname" id="lastname" placeholder="Doe" />
+          <label for="firstname">Firstname</label>
+          <input type="text" name="firstname" id="firstname" placeholder="John" />
+          <label for="email">E-Mail</label>
+          <input type="email" name="email" id="email" placeholder="john.doe@example.com" />
+          <label for="phone">Phone</label>
+          <input type="tel" name="phone" id="phone" placeholder="+1 555 123456" />
+          <label for="birthday">Birthday</label>
+          <input type="date" name="birthday" id="birthday" placeholder="01.01.1970" />
+          <label for="dingenskirchens">Please Select:</label>
+          <select name="dingenskirchens">
+            <option value="uib">UIB</option>
+            <option value="ib" selected>IB</option>
+            <option value="imb">IMB</option>
+          </select>
+          <input type="submit" value="Submit" />
+        </form>
 			</article>
 		</section>
 		<section>
